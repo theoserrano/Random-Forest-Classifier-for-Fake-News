@@ -10,7 +10,7 @@ from sklearn.ensemble import RandomForestClassifier
 newsdataset = pd.read_csv('FakeNewsNet.csv')
 
 x_newsdataset = newsdataset[['title', 'source_domain', 'tweet_num']] 
-y_newsdataset = newsdataset[['real']]
+y_newsdataset = newsdataset['real']
 
 x_newsdataset_treinamento, x_newsdataset_teste, y_newsdataset_treinamento, y_newsdataset_teste = train_test_split(x_newsdataset, y_newsdataset, test_size=0.25)
 
