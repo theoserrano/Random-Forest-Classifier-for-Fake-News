@@ -32,4 +32,4 @@ previsoes = pipeline.predict(x_newsdataset_teste)
 
 from sklearn.metrics import accuracy_score
 
-print(accuracy_score(y_newsdataset_teste, previsoes))
+print(f"Precisão: {accuracy_score(y_newsdataset_teste, previsoes)}")
